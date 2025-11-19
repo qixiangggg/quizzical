@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    color: #293264;
+    font-family: "Karla", sans-serif;
+}
+
+main.homepage{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main.homepage > h1{
+    margin: 0;
+}
+
+main.homepage > p{
+    margin: 1em 0 2em;
+}
+
+main.homepage > button{
+    background-color: #4D5B9E;
+    padding: 1em 4em;
+    color: #F5F7FB;
+    border: none;
+    border-radius: 15px;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+}
+
+.top-bubble{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+.bottom-bubble{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+}
