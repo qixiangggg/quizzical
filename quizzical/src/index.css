@@ -42,9 +42,13 @@ main.homepage > button{
 }
 
 .bottom-bubble{
-    position:relative;
+    position:absolute;
     bottom: 0;
     left: 0;
+}
+
+.relative{
+  position: relative;
 }
 
 main.quizpage{
@@ -75,13 +79,25 @@ div.option input[type="radio"]:checked+label {
     border: none;
 }
 /*  */
+div.option input[type="radio"].correct+label{
+  background-color: #94D7A2;
+}
+
+div.option input[type="radio"].wrong+label{
+  background-color: #F8BCBC;
+  opacity: 0.5;
+}
+
+div.option input[type="radio"]:disabled+label{
+  cursor: not-allowed;
+}
 
 hr{
     color:#DBDEF0;
     margin-block: 2em;
 }
 
-.check-answers-btn{
+.check-answers-btn, .new-game-btn{
     margin: 0 auto;
     background-color: #4D5B9E;
     color: #F5F7FB;
@@ -89,6 +105,22 @@ hr{
     border: none;
     padding: 1em 1.75em;
     display: block;
-    margin: 0 auto;
     cursor: pointer;
+}
+
+footer{
+  text-align: center;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+footer > h2{
+  margin: 0;
+}
+
+footer >button.new-game-btn{
+  margin: 0;
 }
